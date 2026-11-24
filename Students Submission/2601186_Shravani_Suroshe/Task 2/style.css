@@ -1,0 +1,509 @@
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fafaff;
+    color: #17172f;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+
+    background: #20204d;
+    color: white;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 30px 15px;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+}
+
+.logo h2 {
+    font-size: 25px;
+}
+
+
+/* Sidebar Links */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    text-decoration: none;
+    color: white;
+
+    font-size: 18px;
+
+    padding: 18px 20px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+}
+
+
+/* Sidebar Images */
+.sidebar a img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+/* Active Link */
+.sidebar a.active {
+    background: #6544d9;
+}
+
+
+/* Hover */
+.sidebar a:hover {
+    background: #6544d9;
+}
+
+
+/* Sidebar Line */
+.sidebar hr {
+    margin: 30px 15px;
+
+    border: 1px solid #555580;
+}
+
+
+
+/* Main Content */
+.main {
+    margin-left: 280px;
+    padding: 0 30px;
+}
+
+
+
+
+/* Header */
+header {
+    height: 95px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Dashboard Title */
+header h1 {
+    font-size: 36px;
+    color: #17172f;
+    margin : 0;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Notification Bell */
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.notification img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+/* Profile Image */
+.profile img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Profile Name */
+.profile h3 {
+    font-size: 20px;
+    color: #17172f;
+    white-space: nowrap;
+}
+
+/* Dropdown Arrow */
+.profile span {
+    font-size: 16px;
+    color: #555577;
+
+    cursor: pointer;
+}
+
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #eee9ff;
+
+    padding: 30px 40px;
+    margin: 30px 0;
+
+    border-radius: 15px;
+}
+
+.welcome-text {
+    width: 60%;
+}
+
+.welcome h1 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.welcome p {
+    font-size: 22px;
+    line-height: 1.5;
+
+    color: #555577;
+}
+
+.welcome img {
+    width: 35%;
+    height: 200px;
+
+    object-fit: contain;
+}
+
+
+
+/* Statistics */
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+}
+
+.stat img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+.stat h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    font-size: 18px;
+}
+
+
+
+/* Statistics Colors */
+.purple {
+    background: #e9e3ff;
+}
+
+.green {
+    background: #e0f8e9;
+}
+
+.yellow {
+    background: #fff3d9;
+}
+
+.pink {
+    background: #ffe5eb;
+}
+
+
+
+/* Courses and Assignments */
+.content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+
+
+/* Box */
+.box {
+    background: white;
+
+    border: 1px solid #e2e2f2;
+    border-radius: 15px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 8px #eeeeee;
+}
+
+.box h2 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+
+
+/* Courses */
+.course {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.course img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+}
+
+.course-info {
+    flex: 1;
+}
+
+.course-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.course-info p {
+    color: #666688;
+    font-size: 15px;
+}
+
+
+/* Course Percentage */
+.percentage {
+    width: 120px;
+    text-align: right;
+}
+
+.percentage p {
+    margin-bottom: 10px;
+}
+
+
+/* Progress Bar */
+.bar {
+    width: 100%;
+    height: 12px;
+
+    background: #e5e5ef;
+
+    border-radius: 10px;
+}
+
+.bar-80 {
+    width: 80%;
+    height: 12px;
+
+    background: #6329d6;
+
+    border-radius: 10px;
+}
+
+.bar-70 {
+    width: 70%;
+    height: 12px;
+
+    background: #6329d6;
+
+    border-radius: 10px;
+}
+
+.bar-85 {
+    width: 85%;
+    height: 12px;
+
+    background: #6329d6;
+
+    border-radius: 10px;
+}
+
+
+
+/* Assignments */
+.assignment {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.assignment img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+}
+
+.assignment-info {
+    flex: 1;
+}
+
+.assignment h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.assignment p {
+    color: #666688;
+    font-size: 15px;
+}
+
+
+/* Pending Label */
+.pending {
+    background: #ffe5eb;
+    color: #e11d48;
+
+    padding: 10px;
+
+    border-radius: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+
+        position: relative;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome h1 {
+        font-size: 25px;
+    }
+
+    .welcome p {
+        font-size: 17px;
+    }
+
+    .welcome img {
+        width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .course {
+        flex-wrap: wrap;
+    }
+
+    .percentage {
+        width: 100%;
+    }
+
+    .assignment {
+        flex-wrap: wrap;
+    }
+
+}
